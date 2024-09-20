@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Github API</string>
+    <string name="id">Id:</string>
+</resources>

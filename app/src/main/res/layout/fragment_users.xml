@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?actionBarSize"
+    android:background="@color/purple"
+    tools:context=".presentation.ui.fragments.UsersFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:background="@color/white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_users" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/searchview_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:hint="Search"
+        android:paddingHorizontal="10dp"
+        app:closeIcon="@drawable/ic_close"
+        app:iconifiedByDefault="false" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:indicatorColor="@color/purple"
+        app:indicatorSize="40dp" />
+</FrameLayout>

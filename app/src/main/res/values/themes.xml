@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Base.Theme.GithubAPI" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Theme.GithubAPI" parent="Base.Theme.GithubAPI" />
+</resources>
